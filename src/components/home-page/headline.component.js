@@ -4,13 +4,13 @@ import news01 from "../../assets/news/news01.jpeg";
 export default function HeadlineTile(props) {
     return (
         <div>
-            <div className="mx-5 rounded-md border-solid border-grey-500 border-2 shadow-md bg-white flex">
+            <div className="flex mx-5 bg-white border-2 border-solid rounded-md shadow-md border-grey-500">
                 <div>
-                    <img src={news01} alt="" className="h-full w-full rounded-md" />
+                    <img src={news01} alt="" className="w-full h-full rounded-md" />
                 </div>
-                <div className="m-5 w-10/12">
-                    <div className="text-xl font-semibold mb-2 font-serif">{props.title}</div>
-                    <div className="text-sm text-justify font-serif">
+                <div className="w-10/12 m-5">
+                    <div className="mb-2 font-serif text-xl font-semibold">{props.title}</div>
+                    <div className="font-serif text-sm text-justify">
                         {props.description}
                     </div>
                 </div>
